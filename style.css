@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content p:first-child {
+    font-size: 20px;
+    color: #374151;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================= PROFILE PHOTO ================= */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 8px solid white;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    background: #2563eb;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 13px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 40px;
+
+    color: #1e3a8a;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    max-width: 800px;
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    background: #dbeafe;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #555;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.education-box h3 {
+    color: #2563eb;
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+}
+
+.education-box h3:first-child {
+    margin-top: 0;
+}
+
+.education-box p {
+    margin: 8px;
+}
+
+
+/* ================= RESUME ================= */
+
+.resume {
+    text-align: center;
+
+    background: #e0e7ff;
+}
+
+.resume h2 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.resume p {
+    font-size: 17px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+    max-width: 600px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box p {
+    margin: 15px 0;
+
+    font-size: 17px;
+}
+
+.contact-box a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 21px;
+    }
+
+    .profile-circle {
+        width: 200px;
+        height: 200px;
+
+        border-width: 6px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
